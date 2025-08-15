@@ -1,0 +1,2 @@
+overall_r2,best_cv_score,n_experiments,n_data_points,convergence_iterations,best_config
+0.8819094341212811,0.000131093939886875,50,9610,8,Aggressive STLSQ
