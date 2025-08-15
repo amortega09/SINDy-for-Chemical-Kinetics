@@ -1,6 +1,6 @@
 # SINDy-for-Chemical-Kinetics
 
-## 📂 Code Description
+## Code Description
 
 ### **`data_generation.py`**
 Simulates a realistic experimental scenario by:
