@@ -13,10 +13,10 @@ Simulates a realistic experimental scenario by:
 
 -dC/dt = 0.20*B + 0.05*A + 0.02*A*B
 
-- **Experimental design**: 50 initial conditions via **Latin Hypercube Sampling**
+- **Experimental design**: 50 initial conditions via Latin Hypercube Sampling
 - **Realism enhancements**:
-  - Add 5% Gaussian measurement noise to concentration data
-  - Estimate derivatives using **Savitzky–Golay filtering**
+  - Add 7% Gaussian measurement noise to concentration data
+  - Estimate derivatives using Savitzky–Golay filtering
 - **Output**: Datasets that mimic real experimental conditions
 
 ---
@@ -35,4 +35,4 @@ Implements the **enhanced DoE-SINDy algorithm**, featuring:
 
 ## 📖 Inspiration
 Inspired by the paper:  
-> Lyu, W., & Galvanin, F. (2022). DoE-SINDy: An automated framework for model generation and selection in kinetic studies. *Computers & Chemical Engineering*, 164, 107777. [https://doi.org/10.1016/j.compchemeng.2022.107777](https://doi.org/10.1016/j.compchemeng.2022.107777)
+> Lyu, W., & Galvanin, F. (2025). DoE-SINDy: an automated framework for model generation and selection in kinetic studies. Computers & Chemical Engineering, 202, 109265. https://doi.org/10.1016/j.compchemeng.2025.109265
