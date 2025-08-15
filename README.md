@@ -7,15 +7,9 @@ Simulates a realistic experimental scenario by:
 
 - **Ground truth system**: 3-species nonlinear chemical reaction for a batch isothermal reactor:
 
-  \[
-  \frac{dA}{dt} = -0.15A - 0.02AB + 0.01B
-  \]  
-  \[
-  \frac{dB}{dt} = 0.10A - 0.21B - 0.02AB
-  \]  
-  \[
-  \frac{dC}{dt} = 0.20B + 0.05A + 0.02AB
-  \]
+-dA/dt = -0.15*A - 0.02*A*B + 0.01*B 
+-dB/dt = 0.10*A - 0.21*B - 0.02*A*B 
+-dC/dt = 0.20*B + 0.05*A + 0.02*A*B
 
 - **Experimental design**: 50 initial conditions via **Latin Hypercube Sampling**
 - **Realism enhancements**:
