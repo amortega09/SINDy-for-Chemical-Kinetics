@@ -32,29 +32,6 @@ class OptimizedDoESINDy:
         
         return X_subsampled, X_dot_subsampled
     
-    def robust_derivative_estimation(self, X, t_eval, window_size=15):
-        """More robust derivative estimation for noisy data"""
-        from scipy.signal import savgol_filter
-        
-        derivatives = []
-        for i in range(X.shape[1]):
-            # Use smaller window for noisy data
-            window = min(window_size, len(X) // 3)
-            if window % 2 == 0:
-                window += 1
-            
-            # Ensure window is at least 3
-            window = max(3, window)
-            
-            try:
-                deriv = savgol_filter(X[:, i], window, 2, deriv=1, delta=(t_eval[1] - t_eval[0]))
-                derivatives.append(deriv)
-            except:
-                # Fallback to simple finite difference
-                deriv = np.gradient(X[:, i], t_eval)
-                derivatives.append(deriv)
-        
-        return np.column_stack(derivatives)
     
     def get_optimized_configurations(self):
         """Get optimized model configurations for noisy data"""
