@@ -13,7 +13,7 @@ Simulates a realistic experimental scenario by:
 
 -dC/dt = 0.20*B + 0.05*A + 0.02*A*B
 
-- **Experimental design: 50 initial conditions via Latin Hypercube Sampling
+- Experimental design: 50 initial conditions via Latin Hypercube Sampling
 - Realism enhancements:
   - Add 7% Gaussian measurement noise to concentration data
   - Estimate derivatives using Savitzky–Golay filtering
